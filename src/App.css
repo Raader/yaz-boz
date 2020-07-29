@@ -13,6 +13,8 @@
   }
 }
 
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -74,6 +76,9 @@
 }
 @media screen and (max-width: 600px) {
   .column {
+    width: 100% !important;
+  }
+  .add-column,.add-row{
     width: 100% !important;
   }
 }
