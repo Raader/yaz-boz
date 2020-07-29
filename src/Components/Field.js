@@ -11,7 +11,7 @@ class Field extends Component{
     }
     render(){      
         return(
-            <div>
+            <div className="field">
                 <input type="number"ref={ref => this.input = ref} onInput={
                     () =>{
                         this.props.onInput(this.input.value,this.props.index)

@@ -17,15 +17,17 @@ class Column extends Component{
         this.setState({sum:sum});
     }
     render(){
-        return (<div style={{float:"left",width:this.props.width + "%",backgroundColor:"red"}}>
-            <button onClick={() =>this.props.deleteColumn(this.props.id)}>Delete Column</button>
-            <input type="text" placeholder="name" style={{textAlign:"center"}}></input>
+        return (<div className="column" style={{float:"left",width:this.props.width + "%"}}>
+            <div className="heading">
+                <button onClick={() =>this.props.deleteColumn(this.props.id)}>Delete Column</button>
+                <input type="text" placeholder="name" style={{textAlign:"center",width:"100px"}}></input>
+            </div>      
             {this.props.fields.map((field,c) =><Field index={c}num={field} onInput ={(val,i)=>{
                 this.props.panel.state.columns[this.props.index].fields[i] = val;
                 this.props.panel.setState({columns:this.props.panel.state.columns});
                 this.count();
             }}></Field>)}
-            <h2>{this.state.sum}</h2>
+            <h2 style={{border:"3px solid black"}}>{this.state.sum}</h2>
         </div>);
     }
 }

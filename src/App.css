@@ -23,7 +23,37 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.column{
+  background-color: rgb(151, 150, 150);
+}
+.heading{
+  background-color: rgb(196, 194, 194);
+}
+.heading input{
+  background-color: rgb(192, 190, 190);
+}
+.heading button{
+  background-color: rgb(131, 114, 114);
+  cursor: pointer;
+}
+.add-column{
+  border-top: 3px solid black;
+  cursor: pointer;
+  background-color:transparent;
+  border-bottom: 3px solid black;
+}
+.add-row{
+  border: 3px solid black;
+}
 
+.field{
+  border-bottom: 3px solid black;
+  background-color: lightgray;
+}
+.field input{
+  width: 50px;
+  background-color: rgb(192, 190, 190);
+}
 .App-link {
   color: #61dafb;
 }
@@ -34,5 +64,10 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100% !important;
   }
 }

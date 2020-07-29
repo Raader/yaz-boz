@@ -3,8 +3,8 @@ import React,{Component} from "react";
 class AddRow extends Component{
     render(){
         return(
-            <div style={{width:"100%"}}>
-                <button onClick={this.props.onClick}>Add Row</button>
+            <div onClick={this.props.onClick} className="add-row" style={{float:"left",width:"100%"}}>
+                <h1>Add Row</h1>
             </div>
         )    
     }
