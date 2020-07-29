@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-
+import {Input} from "reactstrap";
 class Field extends Component{
     componentDidMount(){
         this.input.value = this.props.num;
@@ -12,8 +12,9 @@ class Field extends Component{
     render(){      
         return(
             <div className="field">
-                <input type="number"ref={ref => this.input = ref} onInput={
+                <input className="form-control"type="number"ref={ref => this.input = ref} onInput={
                     () =>{
+                        console.log(this.input.value);
                         this.props.onInput(this.input.value,this.props.index)
                     }
                 }></input>

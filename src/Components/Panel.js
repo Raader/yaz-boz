@@ -3,6 +3,7 @@ import Column from "./Column"
 import AddColumn from "./AddColumn";
 import *as uuid from "uuid";
 import AddRow from "./AddRow";
+import {Alert} from "reactstrap";
 class Panel extends Component{
     constructor(props){
         super(props);

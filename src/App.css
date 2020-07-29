@@ -1,7 +1,12 @@
 .App {
   text-align: center;
+  
 }
-
+Header{
+  font-family: 'Krona One', sans-serif;
+  margin-bottom: 0.25cm;
+  color: rgb(194, 184, 184);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,13 +31,24 @@
   color: white;
 }
 .column{
-  background-color: rgb(151, 150, 150);
+  border-right: 6px solid gray;
+  background-color: transparent;
+  border-radius: 12px;
+}
+.column button{
+  margin: 0.2cm;
+}
+.column input{
+  margin: auto;
+  width: 70%;
+  margin-bottom: 0.2cm;
 }
 .column h2{
-  background-color: rgb(131, 131, 131);;
+  font-family: 'Krona One', sans-serif;
+  margin-top: 0.25cm;
+  color: gray;
 }
 .heading{
-  background-color: rgb(180, 179, 179);
 }
 .heading input{
   background-color: rgb(192, 190, 190);
@@ -55,12 +71,12 @@
 }
 
 .field{
-  border-bottom: 3px solid black;
-  background-color: rgb(151, 150, 150);
+  margin: 0.1cm;
+  background-color: transparent;  
 }
 .field input{
-  width: 50px;
-  background-color: rgb(192, 190, 190);
+  width: 50%;
+  background-color: rgb(207, 204, 204);
 }
 .App-link {
   color: #61dafb;
