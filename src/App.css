@@ -26,8 +26,11 @@
 .column{
   background-color: rgb(151, 150, 150);
 }
+.column h2{
+  background-color: rgb(131, 131, 131);;
+}
 .heading{
-  background-color: rgb(196, 194, 194);
+  background-color: rgb(180, 179, 179);
 }
 .heading input{
   background-color: rgb(192, 190, 190);
@@ -43,12 +46,15 @@
   border-bottom: 3px solid black;
 }
 .add-row{
-  border: 3px solid black;
+  border-top: 3px solid black;
+  cursor: pointer;
+  background-color:rgb(145, 144, 144);
+  border-bottom: 3px solid black;
 }
 
 .field{
   border-bottom: 3px solid black;
-  background-color: lightgray;
+  background-color: rgb(151, 150, 150);
 }
 .field input{
   width: 50px;

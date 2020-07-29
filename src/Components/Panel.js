@@ -13,7 +13,7 @@ class Panel extends Component{
     }
    
     render(){
-        const columnSize = 100/(this.state.columns.length + 1);
+        const columnSize = 100/(this.state.columns.length);
         const columns = this.state.columns.map((column,c) =><Column panel={this}index={c} fields={column.fields} id={column.id} width={columnSize}deleteColumn={(id) =>{
             this.setState({columns:this.state.columns.filter((value,index,array)=>{
                 
