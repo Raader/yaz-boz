@@ -93,6 +93,8 @@ Header{
 @media screen and (max-width: 600px) {
   .column {
     width: 100% !important;
+    border: 0;
+    border-bottom: 6px solid gray;
   }
   .add-column,.add-row{
     width: 100% !important;
