@@ -39,12 +39,22 @@ class Panel extends Component{
             }
             nArr.push({id:uuid.v4(),fields:fs});
             this.setState({columns:nArr});
-        }}width={columnSize}></AddColumn>,
+        }}width={columnSize}
+        deleteColumn={() =>{
+            this.state.columns.pop();
+            this.setState({columns:this.state.columns});
+        }}></AddColumn>,
         <AddRow onClick={() =>{
             this.state.columns.forEach(element => {
             element.fields.push("");
             });
             this.setState({columns:this.state.columns});
+            }}
+            deleteRow={() => {
+                for(let column of this.state.columns){
+                    column.fields.pop();
+                }
+                this.setState({columns:this.state.columns});
             }}></AddRow>];
     }
 }

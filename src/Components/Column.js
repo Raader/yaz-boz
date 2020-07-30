@@ -21,7 +21,7 @@ class Column extends Component{
     render(){
         return (<div className="column" style={{float:"left",width:this.props.width + "%"}}>
             <div>
-                <Button color="secondary"onClick={() =>this.props.deleteColumn(this.props.id)}>Delete Column</Button>
+                
                 <Input type="text" placeholder="name"></Input>
             </div>      
             {this.props.fields.map((field,c) =><Field index={c}num={field} onInput ={(val,i)=>{
