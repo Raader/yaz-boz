@@ -49,6 +49,14 @@ Header{
   color: gray;
 }
 .heading{
+  position: sticky;
+}
+.sticky-name{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.sticky-count{
 }
 .heading input{
   background-color: rgb(192, 190, 190);

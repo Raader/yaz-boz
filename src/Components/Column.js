@@ -20,8 +20,7 @@ class Column extends Component{
     }
     render(){
         return (<div className="column" style={{float:"left",width:this.props.width + "%"}}>
-            <div>
-                
+            <div className="sticky-name">
                 <Input type="text" placeholder="name"></Input>
             </div>      
             {this.props.fields.map((field,c) =><Field index={c}num={field} onInput ={(val,i)=>{
@@ -29,7 +28,9 @@ class Column extends Component{
                 this.props.panel.setState({columns:this.props.panel.state.columns});
                 this.count();
             }}></Field>)}
-            <h2 style={{margin:"auto"}}>{this.state.sum}</h2>
+            <div className="sticky-count">
+                <h2 style={{margin:"auto"}}>{this.state.sum}</h2>
+            </div>
         </div>);
     }
 }
